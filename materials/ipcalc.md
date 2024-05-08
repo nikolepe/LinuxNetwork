@@ -3,18 +3,18 @@
 #### IP Classification
 
 There are classifications of IP addresses as "private" and "public". The following ranges of addresses are reserved for private (aka LAN) networks:
-- *10.0.0.0* — *10.255.255.255* (*10.0.0.0/8*),
-- *172.16.0.0* — *172.31.255.255* (*172.16.0.0/12*),
-- *192.168.0.0* — *192.168.255.255* (*192.168.0.0/16*).
-- *127.0.0.0* — *127.255.255.255* (Reserved for loopback interfaces (not used for communication between network nodes), so called localhost)
+- *10.0.0.0* — *10.255.255.255* (*10.0.0.0/8*);
+- *172.16.0.0* — *172.31.255.255* (*172.16.0.0/12*);
+- *192.168.0.0* — *192.168.255.255* (*192.168.0.0/16*);
+- *127.0.0.0* — *127.255.255.255* (Reserved for loopback interfaces (not used for communication between network nodes), so called localhost).
 
 #### Ports
 
 The standard defines for each of the **TCP** and **UDP** protocols the ability to simultaneously allocate up to 65536 unique ports on a host,
 identified by numbers from 0 to 65535.
 The whole range of ports is divided into 3 groups:
-- 0 to 1023 are called privileged or reserved (used for system and some popular programs)
-- 1024 to 49151 are called registered ports.
+- 0 to 1023 are called privileged or reserved (used for system and some popular programs);
+- 1024 to 49151 are called registered ports;
 - 49152 to 65535 are called dynamic ports.
 
 ## **ipcalc**

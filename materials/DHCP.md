@@ -4,21 +4,21 @@
 
 It takes four steps to get an address.
 This process is called *DORA* by the first letters of each step:
-- Discovery
-- Offer
-- Request
-- Acknowledgement
+- Discovery,
+- Offer,
+- Request,
+- Acknowledgement.
 
 <img src="../misc/images/dhcp.png" alt="network_route" width="500"/>
 
 #### **DHCP** Options
 
-The client needs not only the IP but also other **DHCP** options for networking - such as subnet mask, default gateway and server address. Options represent numbered points, lines of data that contain the configuration parameters required by the server client.
+The client needs not only the IP but also other **DHCP** options for networking — such as subnet mask, default gateway and server address. Options represent numbered points, lines of data that contain the configuration parameters required by the server client.
 
 Let's describe some of the options:
-- Option 1 - IP subnet mask;
-- Option 3 - the default gateway;
-- Option 6 - DNS server address (primary and backup);
+- Option 1 — IP subnet mask;
+- Option 3 — the default gateway;
+- Option 6 — DNS server address (primary and backup);
 - Option 51 defines for how long the IP address is leased to the client;
 - Option 55 is the list of requested options. The client always requests options for the correct configuration. By sending a message with Option 55, the client sets the list of requested option numeric codes in order of preference. **DHCP** server tries to send a response with options in the same order.
 

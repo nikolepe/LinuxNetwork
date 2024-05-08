@@ -37,13 +37,11 @@ In the example below, you will configure Network Adapter 2 on the Router-1 virtu
 
 Click on the Enable Network Adapter check box, if it is not already checked. Then click on Attached To and select internal Network.
 
-Next, give the internal network a name.
-The name must match with the name configured on the corresponding network adapter on other the VM to be connected to this VM.
+Next, give the internal network a name. The name must match with the name configured on the corresponding network adapter on other the VM to be connected to this VM.
 
-Repeat this process for each node.
-The routers each use three of the four available network adapters to connect to internal networks.
-The PCs each use one network adapter to connect to internal networks.
+Repeat this process for each node. 
 
+The routers each use three of the four available network adapters to connect to internal networks. The PCs each use one network adapter to connect to internal networks.
 
 ## How to add static routes in Ubuntu Linux
 
@@ -52,8 +50,6 @@ Static route addition in Linux may be performed by the command:
 
 But connection, created by this command will disappear after network or system restart.
 
-In Ubuntu Linux, to make static routes persistent,
-we need to add route entries to the network interface file
-(this file was already mentioned above) using the routes property.
+In Ubuntu Linux, to make static routes persistent, we need to add route entries to the network interface file (this file was already mentioned above) using the routes property.
 
 You need to reload **netplan** configuration via `netplan apply` command, if you add a new route entry to the YAML file.

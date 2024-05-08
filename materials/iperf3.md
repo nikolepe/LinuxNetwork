@@ -19,8 +19,7 @@ You can specify the format *(k, m, g for Kbits, Mbits, Gbits or K, M, G for KByt
 Optionally, you can run the server as a daemon, using the *-D* flag and write server messages to a log file, as follows.
 ```iperf3 -s -D > iperf3log```
 
-Then on your local machine which we will treat as the client (where the actual benchmarking takes place),
-run **iperf3** in client mode using *-c* flag and specify the host on which the server is running on (either using its IP address or domain or hostname).
+Then on your local machine which we will treat as the client (where the actual benchmarking takes place), run **iperf3** in client mode using *-c* flag and specify the host on which the server is running on (either using its IP address or domain or hostname).
 ```iperf3 -c 192.168.10.1 -f K```
 
 After about 18 to 20 seconds, the client should terminate and produce results indicating the average throughput for the benchmark, as shown in the following screenshot.
@@ -28,4 +27,4 @@ After about 18 to 20 seconds, the client should terminate and produce results in
 <img src="../misc/images/iperf.png" alt="network_route" width="500"/>
 
 Important: From the benchmark results, as shown in the above screenshot, there is a variation in values from the server and client.
-But, you should always consider using the results obtained from the **iperf3** client machine in every test you carry out.
+But you should always consider using the results obtained from the **iperf3** client machine in every test you carry out.

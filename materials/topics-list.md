@@ -1,16 +1,16 @@
-Hello, student of School21!😉
+Hello, School21 student! 😉
 
-To make it easier for you to navigate the material, we have prepared a list of topics that you will learn in this project.
+To help you navigate through the material, we have prepared a list of topics that you will learn in this project.
 
-We will study:
+We will learn:
 
-- routing;
+- Routing;
 - TCP/IP;
-- ports;
+- Ports;
 - Firewall (iptables);
 - DHCP;
 - NAT;
-- using utils in terminal (ipcalc/iperf3);
+- Using utils in terminal (ipcalc/iperf3);
 - ssh tunnels.
 
-Now, knowing what awaits you in this project, you can slowly begin to study the topics listed above.😇
+Now that you know what to expect in this project, you can slowly start to study the topics listed above. 😇
