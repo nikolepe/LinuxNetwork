@@ -183,8 +183,8 @@ As a result of the work you should provide a report with completed tasks. Each p
 
 #### 2.2. Adding a static route with saving
 ##### Restart the machines
-##### Add static route from one machine to another using *etc/netplan/00-installer-config.yaml* file
-- Add screenshots of the changed *etc/netplan/00-installer-config.yaml*
+##### Add static route from one machine to another using */etc/netplan/00-installer-config.yaml* file
+- Add screenshots of the changed */etc/netplan/00-installer-config.yaml*
   file to the report.
 ##### Ping the connection between the machines
 - Add a screenshot with the call and output of the used command to the report.
