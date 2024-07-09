@@ -138,6 +138,8 @@ As a result of the work you should provide a report with completed tasks. Each p
 - It’s allowed to have several task points shown in one screenshot, but they must all be described in the caption;
 - Install **Ubuntu 20.04 Server LTS** on all virtual machines created during the task.
 
+List of utilities: `ipcalc`, `ip`, `netplan`, `netstat`, `iperf3`, `iptables`, `ping`, `nmap`, `sysctl`, `tcpdump`, `traceroute`, `systemctl`, `telnet`, `dhclient`.
+
 ## Part 1. **ipcalc** tool
 
 "So, let's start our dive into the wonderful world of networks by getting to know IP addresses. And for that we will use **ipcalc** tool."
