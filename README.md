@@ -5,6 +5,8 @@ Linux networks configuration on virtual machines.
 The russian version of the task can be found in the repository.
 
 
+💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
+
 ## Contents
 
 1. [Chapter I](#chapter-i)
@@ -456,5 +458,3 @@ subnet 10.20.0.0 netmask 255.255.255.192
 "You too!"
 
 \> *You talk about other things for a while, listening to some nice music and finishing your drinks, and then you say goodbye...*.
-
-💡 [Tap here](https://forms.yandex.ru/cloud/6418183eeb614624a5cee6b5/) **to leave your feedback on the project**. Product Team really tries to make your educational experience better.
