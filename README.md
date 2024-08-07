@@ -64,7 +64,7 @@ So, the protocol stack **TCP/IP** is a set of rule sets :) This may raise a fair
 
 The thing is that each protocol describes strictly the rules that are allocated to it. Besides, protocols are divided into functionality layers, allowing networking hardware and software to perform much more simply, clearer and to do "their" range of tasks.
 There was developed an **OSI** model (Open Systems Interconnection Basic Reference Model) in 1978 to divide this set of protocols into layers.
-The **OSI** model consists of seven different layers. Each layer is responsible for a specific area in the operation of the communication systems, it does not depend on the layers next to it - it only provides certain services. Each layer performs its task according to a set of rules, called a protocol.
+The **OSI** model consists of seven different layers. Each layer is responsible for a specific area in the operation of the communication systems, it does not depend on the layers next to it — it only provides certain services. Each layer performs its task according to a set of rules, called a protocol.
 
 ### Addressing
 
@@ -81,11 +81,11 @@ Apart from the host address in a **TCP/IP** network, there is such a thing as a 
 A port is given to an application running on some network host to communicate with applications running on other network hosts (including other applications on the same host). In software terms, a port is an area of memory that is controlled by a service.
 
 The IP protocol lies below **TCP** and **UDP** in the protocol hierarchy and is responsible for transmitting and routing information in a network.
-To do this, IP encapsulates each chunk of information (**TCP** or **UDP** packet) in another packet - an IP packet or IP datagram, which stores a header about the source, destination and route.
+To do this, IP encapsulates each chunk of information (**TCP** or **UDP** packet) in another packet — an IP packet or IP datagram, which stores a header about the source, destination and route.
 
 To draw an analogy with the real world, a **TCP/IP** network is a city. The names of streets and alleys are networks and subnets. The building numbers are the addresses of the hosts.
 In buildings, office/apartment numbers are ports. More precisely, the ports are the mailboxes where the recipients (services) are waiting for their correspondence to arrive. Accordingly, office port numbers 1,2 etc. are usually given to directors and executives, as the privileged ones, and ordinary employees get office numbers with larger numbers. For sending and delivering correspondence, information is packed into envelopes (ip-packets),
-which contain the address of the sender (ip and port) and the address of the recipient (ip and port).
+which contain the address of the sender (IP and port) and the address of the recipient (IP and port).
 
 It must be mentioned that the IP protocol has no notion of ports, **TCP** and **UDP** are responsible for port interpretation, by analogy **TCP** and **UDP** do not process IP addresses.
 
@@ -104,7 +104,7 @@ To determine the route, each computer in the network has a routing table that ma
 The IP "reads" the network part of the destination address in a passing packet and if there is an entry in the routing table for that network, the packet is sent to the corresponding gateway.
 
 In Linux, the operating system kernel stores the routing table in the */proc/net/route* file.
-You can view the current routing table with the `netstat -rn` (r - routing table, n - do not convert IP to names) `route` or `ip r` commands.
+You can view the current routing table with the `netstat -rn` (r — routing table, n — do not convert IP to names) `route` or `ip r` commands.
 
 Here is an example of a routing table for an eggplant host:
 ```
@@ -118,13 +118,13 @@ default          128.17.75.98   0.0.0.0         UGN       1500 0          0 eth0
 ```
 
 Meanings of the columns:
-- Destination - addresses of destination networks (hosts). If a network is specified, the address usually ends with a zero;
-- Gateway - the gateway address for the host/network specified in the first column; The third column is the subnet mask for which this route works;
-- Flags - information about destination address (U - route works, N - route for network, H - route for host, etc.);
-- MSS - number of bytes that can be sent at one time;
-- Window - number of frames that can be sent before confirmation is received;
-- irtt - route usage statistics;
-- Iface - specifies the network interface used for the route (eth0, eth1, etc.).
+- Destination — addresses of destination networks (hosts). If a network is specified, the address usually ends with a zero;
+- Gateway — the gateway address for the host/network specified in the first column; The third column is the subnet mask for which this route works;
+- Flags — information about destination address (U — route works, N — route for network, H — route for host, etc.);
+- MSS — number of bytes that can be sent at one time;
+- Window — number of frames that can be sent before confirmation is received;
+- irtt — route usage statistics;
+- Iface — specifies the network interface used for the route (eth0, eth1, etc.).
 
 \> *As last time, you save even more useful information in the materials folder.*
 
@@ -174,7 +174,7 @@ List of utilities: `ipcalc`, `ip`, `netplan`, `netstat`, `iperf3`, `iptables`, `
 
 ##### View existing network interfaces with the `ip a` command
 - Add a screenshot with the call and output of the used command to the report.
-##### Describe the network interface corresponding to the internal network on both machines and set the following addresses and masks: ws1 - *192.168.100.10*, mask */16 *, ws2 - *172.24.116.8*, mask */12*
+##### Describe the network interface corresponding to the internal network on both machines and set the following addresses and masks: ws1 — *192.168.100.10*, mask */16 *, ws2 — *172.24.116.8*, mask */12*
 - Add screenshots of the changed *etc/netplan/00-installer-config.yaml* file for each machine to the report.
 ##### Run the `netplan apply` command to restart the network service
 - Add a screenshot with the call and output of the used command to the report.
@@ -368,8 +368,8 @@ subnet 10.20.0.0 netmask 255.255.255.192
 - Add a screenshot of the changed *etc/netplan/00-installer-config.yaml* file to the report.
 ##### Сonfigure r1 the same way as r2, but make the assignment of addresses strictly linked to the MAC-address (ws11). Run the same tests
 - Describe this part in the report the same way as for r2.
-##### Request ip address update from ws21
-- Add screenshots of ip before and after update to the report;
+##### Request IP address update from ws21
+- Add screenshots of IP before and after update to the report;
 - Describe in the report what **DHCP** server options were used in this point.
 
 ##### Save dumps of virtual machine images
@@ -389,9 +389,9 @@ subnet 10.20.0.0 netmask 255.255.255.192
 - Add screenshots with the call and the output of the used command to the report.
 
 ##### Add the following rules to the firewall, created similarly to the firewall from Part 4, on r2:
-##### 1) delete rules in the filter table - `iptables -F`
-##### 2) delete rules in the "NAT" table - `iptables -F -t nat`
-##### 3) drop all routed packets - `iptables --policy FORWARD DROP`
+##### 1) delete rules in the filter table — `iptables -F`
+##### 2) delete rules in the "NAT" table — `iptables -F -t nat`
+##### 3) drop all routed packets — `iptables --policy FORWARD DROP`
 ##### Run the file as in Part 4
 ##### Check the connection between ws22 and r1 with the `ping` command
 *When running the file with these rules, ws22 should not ping from r1*
@@ -403,7 +403,7 @@ subnet 10.20.0.0 netmask 255.255.255.192
 *When running the file with these rules, ws22 should ping from r1*
 - Add screenshots with the call and the output of the used command to the report.
 ##### Add two more rules to the file:
-##### 5) enable **SNAT**, which is masquerade all local ip from the local network behind r2 (as defined in Part 5 - network 10.20.0.0)
+##### 5) enable **SNAT**, which is masquerade all local IP from the local network behind r2 (as defined in Part 5 — network 10.20.0.0)
 *Tip: it is worth thinking about routing internal packets as well as external packets with an established connection*
 ##### 6) enable **DNAT** on port 8080 of r2 machine and add external network access to the Apache web server running on ws22
 *Tip: be aware that when you will try to connect, there will be a new tcp connection for ws22 and port 80
@@ -457,4 +457,4 @@ subnet 10.20.0.0 netmask 255.255.255.192
 
 "You too!"
 
-\> *You talk about other things for a while, listening to some nice music and finishing your drinks, and then you say goodbye...*.
+\> *You talk about other things for a while, listening to some nice music and finishing your drinks, and then you say goodbye...*
